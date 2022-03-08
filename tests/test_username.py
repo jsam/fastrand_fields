@@ -21,3 +21,16 @@ def test_fastrand_username_no_suffix():
 
     assert username
     assert len(username.split("_")) == 2
+
+
+@pytest.mark.unit
+def test_fastrand_username_multiple():
+    """Check generation of multiple ``fastrand_username``."""
+    from fastrand_fields import fastrand_username
+
+    usernames = { 
+        fastrand_username()
+        for _ in range(100)
+    }
+    breakpoint()
+    assert len(usernames) == 100
