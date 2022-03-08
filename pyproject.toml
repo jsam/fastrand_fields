@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "fastrand_fields"
-version = "0.1.1"
+version = "0.1.2"
 description = "Package to randomly generate fields such as funny usernames. Suitable for fast microservices."
 authors = ["sam <contact@justsam.io>"]
 license = "GNUv3"
