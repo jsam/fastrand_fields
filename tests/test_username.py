@@ -32,5 +32,5 @@ def test_fastrand_username_multiple():
         fastrand_username()
         for _ in range(100)
     }
-    breakpoint()
+    
     assert len(usernames) == 100
